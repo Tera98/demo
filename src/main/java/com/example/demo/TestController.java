@@ -17,11 +17,11 @@ public class TestController {
     public String test(){
         return ts.test();
     }
-    @RequestMapping(value = "/save", method = RequestMethod.GET)
+    @RequestMapping(value = "/save")
     public String save(@RequestParam("value") String value){
         return ts.save(value);
     }
-    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    @RequestMapping(value = "/search")
     public String search(@RequestParam("id") Long id){
         return ts.search(id);
     }
